@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/today-news/static/css/main.57e544f4.css",
+    "main.js": "/today-news/static/js/main.188b0e91.js",
+    "static/js/787.4f2d43fd.chunk.js": "/today-news/static/js/787.4f2d43fd.chunk.js",
+    "static/media/usFlag.jpg": "/today-news/static/media/usFlag.d328bfbb00341e606927.jpg",
+    "index.html": "/today-news/index.html",
+    "main.57e544f4.css.map": "/today-news/static/css/main.57e544f4.css.map",
+    "main.188b0e91.js.map": "/today-news/static/js/main.188b0e91.js.map",
+    "787.4f2d43fd.chunk.js.map": "/today-news/static/js/787.4f2d43fd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57e544f4.css",
+    "static/js/main.188b0e91.js"
+  ]
+}

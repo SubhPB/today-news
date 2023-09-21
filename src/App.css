@@ -1,0 +1,390 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* NavBar Component */
+
+#upper-navbar{
+  height: 6vh;
+  width: 98%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1.5px solid black;
+  border-radius: 10px;
+  margin: 1vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  background-color: white;
+}
+
+/* -------------------------------------- */
+#upper-navbar .search-signin .search-input {
+  display: none;
+  border-radius: 10px;
+  padding-left: 4px;
+  height: 55%;
+  font-size: medium;
+}
+
+#upper-navbar .channel-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+  cursor: pointer;
+}
+
+#upper-navbar .channel-logo span {
+  color: red;
+}
+
+#upper-navbar .channel-logo img {
+  height: 4vh;
+  width: 4vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+#upper-navbar .search-signin{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+#upper-navbar .search-signin h3 {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#upper-navbar #menu {
+  display: none;
+}
+
+
+
+/* ====================== */
+
+#bottom-navbar{
+  height: 9vh;
+  width: 98%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:flex-start;
+  gap: 1.5vw;
+  background-color: red;
+  border-radius: 10px;
+  margin: 1vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+#bottom-navbar h2 {
+  color: white;
+  cursor: pointer;
+}
+
+#bottom-navbar h3 {
+  color: black;
+  cursor: pointer;
+}
+
+.dropdown {
+  float:inline-end;
+  cursor: pointer;
+  /* overflow: hidden;  */
+}
+
+
+.dropbtn {
+  color: white;
+
+}
+
+#bottom-navbar img{
+  height: 5.5vh;
+  width: 5.5vh;
+  /* object-fit: cover; */
+  object-position: center;
+  border-radius: 10px;
+
+}
+
+
+#bottom-navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  border-radius: 10px;
+  min-width: 120px;
+  padding: 8px 0;
+  z-index: 1;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content h4{
+  padding-left: 1.5vw;
+  cursor: pointer;
+
+}
+
+#menu {
+  display: none;
+}
+
+.search-signin{
+  display: none;
+}  
+
+/* End of NavBar Component */
+
+
+
+
+/* start of NewsContent Component */
+
+#news-content{
+  height: 100vh;
+  width: 98%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;  
+  border-radius: 10px;
+  margin: 1vw;
+}
+
+#news-content::-webkit-scrollbar {
+  display: none;
+}
+
+#left-content {
+  max-height: 100%;
+  width: 26%;
+  border-radius: 10px;
+  position: relative;
+}
+
+#right-content {
+  min-height: 100%;
+  /* max-height: 200vh; */
+  width: 72%;
+  border-radius: 10px;
+  color: white;
+  position: relative;
+  
+}
+
+#right-content #loading-bar{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+
+#left-content #loading-bar{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+
+#loading{
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  object-position: center;
+  
+}
+
+#left-content .big-card {
+  height: 50%;
+  width: 100%;
+  background-color: black;
+  /* margin-top: 1vw; */
+  margin-bottom: 1vw; 
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#left-content .big-card img {
+  height: calc(65% - .8vw);
+  width: calc(97% - .8vw);
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+  background-color: black;
+  margin: .8vw
+  
+}
+
+#left-content .big-card .big-card-headlines {
+  margin-left: .8vw;
+  margin-right: .8vw;
+  height: 27%;
+  max-width: calc(97% - .8vw);
+  overflow: hidden;
+  margin-top: -.6vw;
+  margin-bottom: -.7vw;
+  color: red;
+}
+
+#left-content .big-card p {
+  margin-left: .8vw;
+  color: red;
+}
+
+
+/* ========================= */
+
+#right-content .small-card {
+  height: 25%;
+  width: 100%;
+  background-color: red;
+  display : flex;
+  flex-direction: row;
+  margin-bottom: 1vw; 
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  border: 1px solid black;
+}
+
+#right-content .small-card img{
+  height: calc(97% - .4vw);
+  width: calc(20% - .4vw);
+  margin: .4vw;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+  background-color: black;
+  transition : all ease 1s;
+}
+
+#right-content .small-card:hover img{
+  scale : 1.2;
+}
+
+#right-content .small-card-headlines{
+  text-align: center;
+  width: calc(76% - .4vw);
+  height: calc(97% -.4vw);
+  background-color: black;
+  margin: .4vw;
+  border-radius: 10px;
+}
+
+#right-content .small-card-headlines .creditionals{
+  padding-top: 1.4px;
+  width: 100%;
+  max-height: 12%;
+  min-height: 10%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-bottom: 1.8px;
+  border-bottom: 1px solid red;
+}
+
+#right-content .small-card-headlines .small-card-title {
+  width: 100%;
+  min-height: 28%;
+  padding: 2px;
+  border-bottom: 1px solid red;
+  overflow: hidden;
+}
+
+#right-content  .small-card-headlines .small-card-desc{
+  text-align: center;
+  font-size: small;
+  font-weight: 600;
+  width: 100%;
+  max-height: 47%;
+  min-height: 35%;
+  padding: 1.8px;
+  overflow: hidden;
+}
+
+
+#paginator{
+  width: 100%;
+  height: 6%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+  color: black;
+  background-color : black;
+  border-radius : 10px;
+  margin-bottom: 10px;
+}
+
+#paginator .page-address{
+  background-color: white;
+  /* color: black; */
+  padding-left: 3px;
+  padding-right: 3px; 
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#paginator h2 {
+  cursor: pointer;
+  color: white;
+}
+
+
+
+/* end of NewsContent Component */
+
+
+
+
+/* ---------Responsive-------------- */
+
+@import url('responsive.css');
